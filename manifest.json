@@ -1,0 +1,15 @@
+{
+    "name": "CODE RUNNERのランキングが使いづらい件",
+    "version": "0.0.1",
+    "author": "KISUGE, Yuto",
+    "manifest_version": 2,
+    "description": "べんり",
+    "permissions": ["https://game.coderunner.jp/", "storage"],
+    "content_scripts": [
+        {
+            "matches": ["https://game.coderunner.jp/"],
+            "js": ["jquery-2.1.1.min.js", "main.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
